@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signal Foundry AI | Custom AI for SMB Operators</title>
+    <meta name="description" content="Signal Foundry AI helps SMB teams spot automation wins, pilot tailored AI tools, and scale them safely with transparent pricing and white-glove delivery." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              grotesk: ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              night: '#05060A',
+              graphite: '#161821',
+              accent: '#71F7BF',
+              accentDark: '#15C987',
+            },
+            boxShadow: {
+              card: '0 25px 60px rgba(5, 6, 10, 0.45)',
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-night text-white font-grotesk">
+    <header class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(113,247,191,0.25),_transparent_45%)] opacity-70"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-night"></div>
+      <div class="relative max-w-6xl mx-auto px-6 py-10 lg:py-16">
+        <nav class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="h-10 w-10 rounded-full border border-white/20 flex items-center justify-center text-lg font-semibold tracking-[0.2em]">SF</div>
+            <div>
+              <p class="text-xs uppercase tracking-[0.5em] text-white/60">Signal Foundry</p>
+              <p class="text-sm text-white/80">Applied AI Studio</p>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center gap-6 text-xs uppercase tracking-[0.2em] text-white/60">
+            <a href="#problems" class="hover:text-white">Why AI</a>
+            <a href="#solutions" class="hover:text-white">Solutions</a>
+            <a href="#process" class="hover:text-white">Process</a>
+            <a href="#pricing" class="hover:text-white">Plans</a>
+            <a href="#cases" class="hover:text-white">Results</a>
+            <a href="#contact" class="hover:text-white">Contact</a>
+          </div>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-full border border-accent px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent hover:bg-accent hover:text-night transition">Book a diagnostic</a>
+        </nav>
+        <div class="mt-16 grid gap-12 lg:grid-cols-[minmax(0,60%)_auto] lg:items-center">
+          <div>
+            <p class="text-xs uppercase tracking-[0.4em] text-white/60">Done-with-you AI for SMB operators</p>
+            <h1 class="mt-6 text-4xl font-semibold leading-tight text-white lg:text-6xl">
+              Turn messy back-office work into repeatable AI playbooks in 45 days.
+            </h1>
+            <p class="mt-6 text-lg text-white/70">
+              We help finance, ops, and customer teams uncover automation wins, pilot custom copilots, and deploy safely with governance built in—without hiring a data science team.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#contact" class="rounded-full bg-accent px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-night shadow-[0_20px_60px_rgba(113,247,191,0.4)] hover:bg-accentDark">
+                Scope my project
+              </a>
+              <a href="#cases" class="rounded-full border border-white/20 px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white/80 hover:border-white/60">
+                See live builds
+              </a>
+            </div>
+            <div class="mt-10 grid gap-6 sm:grid-cols-3 text-sm text-white/70">
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-white/40">Average payback</p>
+                <p class="text-2xl text-accent font-semibold">11 weeks</p>
+                <p class="text-xs text-white/50">From pilot launch to breakeven.</p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-white/40">Manual hours reclaimed</p>
+                <p class="text-2xl text-accent font-semibold">1,800+/mo</p>
+                <p class="text-xs text-white/50">Across finance + CX teams.</p>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-white/40">Industries served</p>
+                <p class="text-2xl text-accent font-semibold">22</p>
+                <p class="text-xs text-white/50">From logistics to clinics.</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-graphite/80 p-6 backdrop-blur shadow-card">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/60">Signal stack</p>
+            <div class="mt-4 space-y-5">
+              <div>
+                <p class="text-sm text-white/60">Cost per support ticket</p>
+                <p class="text-2xl text-white font-semibold">↓ 43%</p>
+                <p class="text-xs text-white/40">AI triage + reply suggestions for a 35-seat help desk.</p>
+              </div>
+              <div>
+                <p class="text-sm text-white/60">Revenue attributed to AI leads</p>
+                <p class="text-2xl text-white font-semibold">$4.8M</p>
+                <p class="text-xs text-white/40">Predictive routing + SDR copilot for a distributor.</p>
+              </div>
+              <div>
+                <p class="text-sm text-white/60">Data governance score</p>
+                <p class="text-2xl text-white font-semibold">SOC 2-ready</p>
+                <p class="text-xs text-white/40">Red-team + policy kits included with every deployment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="trust" class="py-12 border-y border-white/5 bg-graphite/60">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <p class="text-xs uppercase tracking-[0.5em] text-white/50">Trusted by teams at</p>
+        <div class="flex flex-wrap gap-6 text-white/40 text-sm tracking-[0.3em] uppercase">
+          <span>Beacon Clinics</span>
+          <span>Northwind Logistics</span>
+          <span>Mosaic Credit</span>
+          <span>Pacific Parks</span>
+          <span>Sunset Retail</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="problems" class="py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="lg:flex lg:items-end lg:justify-between">
+          <div>
+            <p class="text-xs uppercase tracking-[0.5em] text-white/50">SMB pain radar</p>
+            <h2 class="mt-3 text-3xl font-semibold">We fix the work your team keeps duct-taping.</h2>
+            <p class="mt-4 text-white/70">52% of SMB operators say they’re drowning in repetitive systems work—billing, inbox triage, inventory, reporting. We turn those pain points into scoped AI use cases with measurable ROI.</p>
+          </div>
+          <a href="#contact" class="mt-6 inline-flex items-center gap-2 text-accent text-sm uppercase tracking-[0.3em]">Free 30-min discovery →</a>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="problem-card">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Customer teams</p>
+            <h3 class="text-xl font-semibold text-white">Inbox overload</h3>
+            <p class="text-sm text-white/70">Agent assist copilots summarize, draft, and push responses into your CRM, cutting handle time by 40% without breaking tone.</p>
+          </article>
+          <article class="problem-card">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Finance ops</p>
+            <h3 class="text-xl font-semibold text-white">Spreadsheets on fumes</h3>
+            <p class="text-sm text-white/70">Reconcile payables, flag anomalies, and push ledger entries automatically with guardrails approved by your controller.</p>
+          </article>
+          <article class="problem-card">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Field & inventory</p>
+            <h3 class="text-xl font-semibold text-white">Forecast blind spots</h3>
+            <p class="text-sm text-white/70">Blend POS, warehouse, and service data into demand forecasts plus auto-generated pick lists, saving hours every route.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions" class="py-20 bg-graphite/40">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center">
+          <p class="text-xs uppercase tracking-[0.5em] text-white/50">Custom modules</p>
+          <h2 class="mt-3 text-3xl font-semibold">Three ways we ship AI into your workflow.</h2>
+        </div>
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="solution-card">
+            <h3 class="text-xl font-semibold text-white">Copilot-in-the-loop</h3>
+            <p class="mt-3 text-sm text-white/70">Gmail, Outlook, or Zendesk sidebars that summarize threads, draft context-aware replies, and log CRM notes with one click.</p>
+            <ul class="mt-4 space-y-2 text-sm text-white/50">
+              <li>• LLM safety filters + tone profiles</li>
+              <li>• SOC2/SAML-ready auth</li>
+              <li>• Analytics on adoption + ROI</li>
+            </ul>
+          </article>
+          <article class="solution-card">
+            <h3 class="text-xl font-semibold text-white">Automation blueprints</h3>
+            <p class="mt-3 text-sm text-white/70">Orchestrations that watch your systems (ERP, CRM, Google Drive) and trigger human approvals, Slack nudges, or API calls when data shifts.</p>
+            <ul class="mt-4 space-y-2 text-sm text-white/50">
+              <li>• Built on n8n, Make, or custom code</li>
+              <li>• Observability + runbooks included</li>
+              <li>• Change-management playbooks</li>
+            </ul>
+          </article>
+          <article class="solution-card">
+            <h3 class="text-xl font-semibold text-white">Insight hubs</h3>
+            <p class="mt-3 text-sm text-white/70">Private dashboards where teams query natural language against live business data, with governance + lineage baked in.</p>
+            <ul class="mt-4 space-y-2 text-sm text-white/50">
+              <li>• Data contracts + connectors</li>
+              <li>• Conversational interface training</li>
+              <li>• Alerts + watchlists for leadership</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="py-20">
+      <div class="max-w-6xl mx-auto px-6 grid gap-10 lg:grid-cols-[45%_auto] lg:items-center">
+        <div>
+          <p class="text-xs uppercase tracking-[0.5em] text-white/50">How we work</p>
+          <h2 class="mt-3 text-3xl font-semibold">From napkin idea to production in 45 days.</h2>
+          <p class="mt-4 text-white/70">Our playbook helps SMB leaders prove ROI without risking core systems.</p>
+        </div>
+        <div class="process-grid">
+          <article>
+            <p class="step">01 · Discovery lab</p>
+            <h3>Map pains + data reality</h3>
+            <p>2-week sprint. Interviews, data inventory, ROI model. Ends with prioritized use cases + Figma click-through.</p>
+          </article>
+          <article>
+            <p class="step">02 · Pilot build</p>
+            <h3>Ship a controlled experiment</h3>
+            <p>4-week build + enablement. Copilot, automation, or insight hub deployed to a friendly cohort.</p>
+          </article>
+          <article>
+            <p class="step">03 · Scale + govern</p>
+            <h3>Roll out with guardrails</h3>
+            <p>Playbooks for training, analytics, compliance. Ops runbooks ensure finance & IT sign-off.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="py-20 bg-graphite/50">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center">
+          <p class="text-xs uppercase tracking-[0.5em] text-white/50">Engagement models</p>
+          <h2 class="mt-3 text-3xl font-semibold">Simple, transparent phases.</h2>
+        </div>
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="pricing-card">
+            <p class="text-xs uppercase tracking-[0.4em] text-white/50">Phase 1</p>
+            <h3 class="text-2xl font-semibold text-white">Diagnostic</h3>
+            <p class="mt-3 text-sm text-white/70">$7.5K fixed · 2 weeks</p>
+            <ul class="mt-4 space-y-2 text-sm text-white/50">
+              <li>• ROI + feasibility report</li>
+              <li>• Data readiness checklist</li>
+              <li>• Pilot backlog + roadmap</li>
+            </ul>
+          </article>
+          <article class="pricing-card is-featured">
+            <p class="text-xs uppercase tracking-[0.4em] text-white/50">Phase 2</p>
+            <h3 class="text-2xl font-semibold text-white">Pilot sprint</h3>
+            <p class="mt-3 text-sm text-white/70">Starting at $28K · 4–6 weeks</p>
+            <ul class="mt-4 space-y-2 text-sm text-white/50">
+              <li>• Build + integrate 1 use case</li>
+              <li>• Enablement + training kit</li>
+              <li>• Adoption + ROI reporting</li>
+            </ul>
+          </article>
+          <article class="pricing-card">
+            <p class="text-xs uppercase tracking-[0.4em] text-white/50">Phase 3</p>
+            <h3 class="text-2xl font-semibold text-white">Scale retainer</h3>
+            <p class="mt-3 text-sm text-white/70">From $8K/mo</p>
+            <ul class="mt-4 space-y-2 text-sm text-white/50">
+              <li>• Additional automations</li>
+              <li>• Monitoring + governance</li>
+              <li>• Quarterly roadmap reviews</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center">
+          <p class="text-xs uppercase tracking-[0.5em] text-white/50">Proof of work</p>
+          <h2 class="mt-3 text-3xl font-semibold">Recent builds that moved the needle.</h2>
+        </div>
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="case-card">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Healthcare network</p>
+            <h3 class="text-xl font-semibold text-white">Clinical inbox copilot</h3>
+            <p class="mt-2 text-sm text-white/70">Summarized patient threads and drafted responses for 4 regional clinics.</p>
+            <ul class="mt-4 space-y-1 text-sm text-white/50">
+              <li>• 37% faster triage</li>
+              <li>• 0 PHI incidents (HIPAA audit cleared)</li>
+            </ul>
+          </article>
+          <article class="case-card">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Wholesale distributor</p>
+            <h3 class="text-xl font-semibold text-white">Predictive replenishment</h3>
+            <p class="mt-2 text-sm text-white/70">Forecast engine combining POS + warehouse feeds to auto-create purchase orders.</p>
+            <ul class="mt-4 space-y-1 text-sm text-white/50">
+              <li>• $1.2M inventory reduction</li>
+              <li>• 92% forecast accuracy</li>
+            </ul>
+          </article>
+          <article class="case-card">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Fintech lender</p>
+            <h3 class="text-xl font-semibold text-white">Risk analyst copilot</h3>
+            <p class="mt-2 text-sm text-white/70">LLM assistant that reads PDF apps, highlights risk anomalies, and writes memos.</p>
+            <ul class="mt-4 space-y-1 text-sm text-white/50">
+              <li>• 55 hours/week saved</li>
+              <li>• 0 critical hallucinations (policy filters)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-graphite/40">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="lg:flex lg:items-start lg:gap-10">
+          <div class="lg:w-1/3">
+            <p class="text-xs uppercase tracking-[0.5em] text-white/50">FAQs</p>
+            <h2 class="mt-3 text-3xl font-semibold">Straight answers for busy operators.</h2>
+            <p class="mt-4 text-white/70">Security, change management, and pricing clarity baked in.</p>
+          </div>
+          <div class="mt-8 lg:mt-0 lg:flex-1 space-y-6">
+            <article class="faq-card">
+              <h3>How do you protect our data?</h3>
+              <p>We deploy inside your cloud when needed, enforce data-routing rules, and run red-team tests before launch. Every build ships with a data map, retention policy, and admin controls.</p>
+            </article>
+            <article class="faq-card">
+              <h3>What tools do you use?</h3>
+              <p>OpenAI, Anthropic, Azure ML, Vertex, plus orchestration layers (LangChain, LlamaIndex) and automation tools (Zapier, Make, n8n). We pick the stack that suits your compliance and budget.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Can you work with our IT team?</h3>
+              <p>Yes—every engagement has a technical lead and change manager. We co-author acceptance criteria, run joint QA, and train your team before handoff.</p>
+            </article>
+            <article class="faq-card">
+              <h3>How do we measure ROI?</h3>
+              <p>Diagnostic sprint defines baseline KPIs (hours saved, revenue lift, error rate). Pilots ship with dashboards + weekly readouts so finance and ops can quantify the impact.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20">
+      <div class="max-w-5xl mx-auto px-6 grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div>
+          <p class="text-xs uppercase tracking-[0.5em] text-white/50">Book a diagnostic</p>
+          <h2 class="mt-3 text-3xl font-semibold">Bring us a messy workflow. Leave with an AI action plan.</h2>
+          <p class="mt-4 text-white/70">Pick a slot for a 30-minute discovery call. We’ll review your top use case, expected ROI, and data readiness. No jargon, no pressure.</p>
+          <ul class="mt-6 space-y-3 text-sm text-white/60">
+            <li>• SOC 2, GDPR, HIPAA-friendly playbooks</li>
+            <li>• Tool-agnostic recommendations</li>
+            <li>• Includes pilot scope + timeline</li>
+          </ul>
+        </div>
+        <div class="rounded-3xl border border-white/10 bg-graphite/80 p-6 shadow-card">
+          <form class="space-y-4">
+            <div>
+              <label class="text-xs uppercase tracking-[0.3em] text-white/50">Name</label>
+              <input type="text" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white focus:outline-none focus:ring focus:ring-accent" placeholder="Jordan Patel" />
+            </div>
+            <div>
+              <label class="text-xs uppercase tracking-[0.3em] text-white/50">Email</label>
+              <input type="email" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white focus:outline-none focus:ring focus:ring-accent" placeholder="jordan@sunsetretail.com" />
+            </div>
+            <div>
+              <label class="text-xs uppercase tracking-[0.3em] text-white/50">Company & role</label>
+              <input type="text" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white focus:outline-none focus:ring focus:ring-accent" placeholder="Sunset Retail · COO" />
+            </div>
+            <div>
+              <label class="text-xs uppercase tracking-[0.3em] text-white/50">What should we tackle first?</label>
+              <textarea rows="4" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white focus:outline-none focus:ring focus:ring-accent" placeholder="e.g., automate AP approvals, launch a support copilot, build demand forecast"></textarea>
+            </div>
+            <button type="submit" class="w-full rounded-full bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-night hover:bg-accentDark">Send brief</button>
+            <p class="text-xs text-white/50 text-center">Or email <a href="mailto:hello@signalfoundry.ai" class="text-accent">hello@signalfoundry.ai</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-white/5 bg-graphite/80 py-10">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-sm text-white/50">
+        <p>© <span id="year"></span> Signal Foundry AI · San Diego & Remote</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#faq" class="hover:text-white">Security + Privacy</a>
+          <a href="#pricing" class="hover:text-white">Engagements</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

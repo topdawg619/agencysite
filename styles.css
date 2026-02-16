@@ -1,0 +1,51 @@
+:root {
+  color-scheme: dark;
+}
+
+.problem-card,
+.solution-card,
+.pricing-card,
+.case-card,
+.faq-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 1.5rem;
+  background: rgba(5, 6, 10, 0.7);
+  box-shadow: 0 20px 50px rgba(5, 6, 10, 0.4);
+}
+
+.process-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.process-grid article {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 1.5rem;
+  background: rgba(5, 6, 10, 0.65);
+}
+
+.process-grid .step {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 0.75rem;
+}
+
+.case-card ul li,
+.faq-card p {
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .problem-card,
+  .solution-card,
+  .pricing-card,
+  .case-card,
+  .faq-card,
+  .process-grid article {
+    border-radius: 20px;
+  }
+}
