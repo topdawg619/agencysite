@@ -1,385 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Agentra AI | Custom AI for SMB Operators</title>
-    <meta name="description" content="Agentra AI helps SMB teams spot automation wins, pilot tailored AI tools, and scale them safely with transparent pricing and white-glove delivery." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              grotesk: ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif'],
-            },
-            colors: {
-              night: '#05060A',
-              graphite: '#161821',
-              accent: '#71F7BF',
-              accentDark: '#15C987',
-            },
-            boxShadow: {
-              card: '0 25px 60px rgba(5, 6, 10, 0.45)',
-            },
-          },
-        },
-      };
-    </script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body class="bg-night text-white font-grotesk">
-    <header class="relative overflow-hidden">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(113,247,191,0.25),_transparent_45%)] opacity-70"></div>
-      <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-night"></div>
-      <div class="relative max-w-6xl mx-auto px-6 py-10 lg:py-16">
-        <nav class="flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <div class="h-10 w-10 rounded-full border border-white/20 flex items-center justify-center text-lg font-semibold tracking-[0.2em]">AG</div>
-            <div>
-              <p class="text-xs uppercase tracking-[0.5em] text-white/60">Agentra</p>
-              <p class="text-sm text-white/80">Applied AI Studio</p>
-            </div>
-          </div>
-          <div class="hidden md:flex items-center gap-6 text-xs uppercase tracking-[0.2em] text-white/60">
-            <a href="#problems" class="hover:text-white">Why AI</a>
-            <a href="#solutions" class="hover:text-white">Solutions</a>
-            <a href="#process" class="hover:text-white">Process</a>
-            <a href="#pricing" class="hover:text-white">Plans</a>
-            <a href="#cases" class="hover:text-white">Results</a>
-            <a href="#contact" class="hover:text-white">Contact</a>
-          </div>
-          <a href="#contact" class="inline-flex items-center gap-2 rounded-full border border-accent px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent hover:bg-accent hover:text-night transition">Book a diagnostic</a>
-        </nav>
-        <div class="mt-16 grid gap-12 lg:grid-cols-[minmax(0,60%)_auto] lg:items-center">
-          <div>
-            <p class="text-xs uppercase tracking-[0.4em] text-white/60">Done-with-you AI for SMB operators</p>
-            <h1 class="mt-6 text-4xl font-semibold leading-tight text-white lg:text-6xl">
-              Turn messy back-office work into repeatable AI playbooks in 45 days.
-            </h1>
-            <p class="mt-6 text-lg text-white/70">
-              We help finance, ops, and customer teams uncover automation wins, pilot custom copilots, and deploy safely with governance built in—without hiring a data science team.
-            </p>
-            <div class="mt-8 flex flex-wrap gap-4">
-              <a href="#contact" class="rounded-full bg-accent px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-night shadow-[0_20px_60px_rgba(113,247,191,0.4)] hover:bg-accentDark">
-                Scope my project
-              </a>
-              <a href="#cases" class="rounded-full border border-white/20 px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white/80 hover:border-white/60">
-                See live builds
-              </a>
-            </div>
-            <div class="mt-10 grid gap-6 sm:grid-cols-3 text-sm text-white/70">
-              <div>
-                <p class="text-xs uppercase tracking-[0.3em] text-white/40">Average payback</p>
-                <p class="text-2xl text-accent font-semibold">11 weeks</p>
-                <p class="text-xs text-white/50">From pilot launch to breakeven.</p>
-              </div>
-              <div>
-                <p class="text-xs uppercase tracking-[0.3em] text-white/40">Manual hours reclaimed</p>
-                <p class="text-2xl text-accent font-semibold">1,800+/mo</p>
-                <p class="text-xs text-white/50">Across finance + CX teams.</p>
-              </div>
-              <div>
-                <p class="text-xs uppercase tracking-[0.3em] text-white/40">Industries served</p>
-                <p class="text-2xl text-accent font-semibold">22</p>
-                <p class="text-xs text-white/50">From logistics to clinics.</p>
-              </div>
-            </div>
-          </div>
-          <div class="rounded-3xl border border-white/10 bg-graphite/80 p-6 backdrop-blur shadow-card">
-            <p class="text-xs uppercase tracking-[0.3em] text-white/60">Signal stack</p>
-            <div class="mt-4 space-y-5">
-              <div>
-                <p class="text-sm text-white/60">Cost per support ticket</p>
-                <p class="text-2xl text-white font-semibold">↓ 43%</p>
-                <p class="text-xs text-white/40">AI triage + reply suggestions for a 35-seat help desk.</p>
-              </div>
-              <div>
-                <p class="text-sm text-white/60">Revenue attributed to AI leads</p>
-                <p class="text-2xl text-white font-semibold">$4.8M</p>
-                <p class="text-xs text-white/40">Predictive routing + SDR copilot for a distributor.</p>
-              </div>
-              <div>
-                <p class="text-sm text-white/60">Data governance score</p>
-                <p class="text-2xl text-white font-semibold">SOC 2-ready</p>
-                <p class="text-xs text-white/40">Red-team + policy kits included with every deployment.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agentra • Agentic AI Systems Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root[data-theme="aurora"],:root {
+  --ds-ink-900:#05060A;
+  --ds-ink-700:#151826;
+  --ds-ink-500:#3B405C;
+  --ds-ink-100:#A7B4FF;
+  --ds-glow-500:#6C63FF;
+  --ds-glow-300:#6CF4FF;
+  --ds-glow-200:#61F5B0;
+  --ds-warning-500:#FF9F43;
+  --ds-danger-500:#FF5A5F;
+  --ds-radius-md:18px;
+  --ds-shadow-card:0 25px 60px rgba(5,6,10,.55);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--ds-ink-900);
+  color:#F5F7FF;
+  font-family:'Inter','Space Grotesk',system-ui;
+  min-height:100vh;
+}
+.hero-bg{position:fixed;inset:0;z-index:-1;background:
+  radial-gradient(circle at 15% 20%,rgba(108,99,255,.3),transparent 52%),
+  radial-gradient(circle at 80% 0%,rgba(108,244,255,.2),transparent 45%),
+  linear-gradient(180deg,rgba(5,6,10,.95),rgba(5,6,10,.98));
+  filter:drop-shadow(0 0 40px rgba(108,99,255,.25));
+}
+.wrapper{max-width:1180px;margin:0 auto;padding:32px 20px 80px;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:24px;flex-wrap:wrap;}
+.brand{letter-spacing:10px;font-family:'Space Grotesk';color:var(--ds-glow-300);font-weight:600;font-size:1rem;}
+nav ul{display:flex;gap:22px;list-style:none;font-size:.92rem;color:var(--ds-ink-100);flex-wrap:wrap;}
+nav a{text-decoration:none;color:inherit;transition:color .2s;}
+nav a:hover{color:#fff;}
+nav .cta{padding:11px 24px;border-radius:999px;background:#fff;color:#05060A;font-weight:600;text-decoration:none;}
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:46px;padding:60px 0 40px;align-items:center;}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:.75rem;letter-spacing:3px;text-transform:uppercase;border-radius:999px;padding:6px 14px;background:rgba(108,244,255,.12);color:var(--ds-glow-300);}
+.hero h1{font-family:'Space Grotesk';font-size:clamp(2.6rem,4vw,4.3rem);line-height:1.05;margin:18px 0;}
+.hero p{color:var(--ds-ink-100);font-size:1.1rem;line-height:1.6;max-width:560px;margin-bottom:28px;}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:16px;}
+.hero-buttons a{padding:14px 30px;border-radius:999px;font-weight:600;text-decoration:none;}
+.hero-buttons .primary{background:var(--ds-glow-500);color:#fff;box-shadow:0 30px 60px rgba(108,99,255,.35);}
+.hero-buttons .secondary{border:1px solid rgba(255,255,255,.3);color:#fff;}
+.hero-panel{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:26px;box-shadow:var(--ds-shadow-card);backdrop-filter:blur(12px);}
+.hero-panel h3{font-size:1.05rem;margin-bottom:6px;}
+.hero-panel ul{list-style:none;color:var(--ds-ink-100);line-height:1.6;font-size:.95rem;margin-top:16px;}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin:30px 0 10px;}
+.metrics div{padding:18px;border-radius:20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);}
+.metrics h4{font-size:.85rem;letter-spacing:2px;color:var(--ds-ink-100);text-transform:uppercase;margin-bottom:6px;}
+.metrics p{font-family:'Space Grotesk';font-size:1.8rem;}
+.section{padding:56px 0;border-top:1px solid rgba(255,255,255,.06);}
+.section h2{font-size:2.2rem;margin-bottom:12px;font-family:'Space Grotesk';}
+.section p.lead{color:var(--ds-ink-100);max-width:720px;margin-bottom:26px;font-size:1rem;line-height:1.6;}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;}
+.pillar{background:var(--ds-ink-700);border-radius:20px;border:1px solid rgba(255,255,255,.08);padding:24px;display:flex;flex-direction:column;gap:10px;}
+.pillar h3{font-size:1.2rem;}
+.pillar p{color:var(--ds-ink-100);font-size:.96rem;line-height:1.6;}
+.pillar ul{color:var(--ds-ink-100);padding-left:20px;font-size:.92rem;line-height:1.5;margin-top:8px;}
+.story-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:24px;}
+.story{padding:22px;border-radius:18px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);}
+.story h4{font-size:1.05rem;margin-bottom:8px;}
+.story span{font-size:.85rem;color:var(--ds-ink-100);}
+.story p{color:var(--ds-ink-100);font-size:.95rem;margin-top:10px;line-height:1.5;}
+.architecture{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:24px;}
+.arch-card{padding:24px;border-radius:20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);}
+.arch-card h3{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-size:1.05rem;}
+.arch-card ul{padding-left:20px;color:var(--ds-ink-100);font-size:.95rem;line-height:1.5;margin-top:10px;}
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:24px;}
+.timeline div{padding:20px;border-radius:18px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);}
+.timeline h4{font-size:.9rem;letter-spacing:2px;color:var(--ds-ink-100);text-transform:uppercase;margin-bottom:6px;}
+.timeline p{font-size:1.05rem;font-family:'Space Grotesk';}
+.list-check{list-style:none;color:var(--ds-ink-100);font-size:.95rem;line-height:1.6;margin-top:12px;}
+.list-check li{margin-bottom:8px;}
+.list-check li::before{content:"✓";color:var(--ds-glow-200);margin-right:8px;}
+.process{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:16px;}
+.process-card{padding:22px;border-radius:18px;background:var(--ds-ink-700);border:1px solid rgba(255,255,255,.08);}
+.process-card span{font-size:.8rem;letter-spacing:2px;color:var(--ds-glow-300);}
+.process-card h3{font-size:1.1rem;margin:8px 0;}
+.process-card p{color:var(--ds-ink-100);font-size:.95rem;line-height:1.5;}
+.case-block{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:28px;margin-top:30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+.case-block h3{font-size:1.3rem;margin-bottom:6px;}
+.case-block ul{color:var(--ds-ink-100);line-height:1.5;font-size:.95rem;padding-left:20px;margin-top:12px;}
+.cta{margin-top:60px;padding:48px;border-radius:26px;background:linear-gradient(135deg,rgba(108,99,255,.4),rgba(108,244,255,.25));border:1px solid rgba(255,255,255,.1);text-align:center;box-shadow:0 30px 60px rgba(5,6,10,.45);}
+.cta h2{font-size:2.3rem;margin-bottom:12px;font-family:'Space Grotesk';}
+.cta p{color:#E3E7FF;margin-bottom:24px;font-size:1.05rem;}
+.cta .actions{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;}
+.cta a{padding:14px 32px;border-radius:999px;font-weight:600;text-decoration:none;}
+.cta .primary{background:#fff;color:#05060A;}
+.cta .secondary{border:1px solid rgba(255,255,255,.4);color:#fff;}
+footer{text-align:center;color:var(--ds-ink-100);font-size:.85rem;margin-top:50px;padding-top:30px;border-top:1px solid rgba(255,255,255,.08);} 
+@media(max-width:640px){nav ul{display:none}}
+</style>
+</head>
+<body>
+<div class="hero-bg"></div>
+<div class="wrapper">
+  <nav>
+    <div class="brand">AGENTRA</div>
+    <ul>
+      <li><a href="#why">Why Agentic</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#cases">Proof</a></li>
+      <li><a href="#cta">Engage</a></li>
+    </ul>
+    <a class="cta" href="mailto:hello@agentra.ai">Book a Strategy Call</a>
+  </nav>
 
-    <section id="trust" class="py-12 border-y border-white/5 bg-graphite/60">
-      <div class="max-w-6xl mx-auto px-6 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-        <p class="text-xs uppercase tracking-[0.5em] text-white/50">Trusted by teams at</p>
-        <div class="flex flex-wrap gap-6 text-white/40 text-sm tracking-[0.3em] uppercase">
-          <span>Beacon Clinics</span>
-          <span>Northwind Logistics</span>
-          <span>Mosaic Credit</span>
-          <span>Pacific Parks</span>
-          <span>Sunset Retail</span>
-        </div>
+  <header class="hero">
+    <div>
+      <span class="badge">Agentic AI Systems Studio</span>
+      <h1>Agent workflows that make your org faster, more credible, and revenue-ready.</h1>
+      <p>Agentra designs, deploys, and operates autonomous model pipelines that find signals, brief executives, and trigger action across the cloud stack. We combine multi-cloud engineering with an operator-grade UX layer so AI teammates actually earn trust.</p>
+      <div class="hero-buttons">
+        <a class="primary" href="#cases">See proof</a>
+        <a class="secondary" href="#architecture">View architecture</a>
       </div>
-    </section>
-
-    <section id="problems" class="py-20">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="lg:flex lg:items-end lg:justify-between">
-          <div>
-            <p class="text-xs uppercase tracking-[0.5em] text-white/50">SMB pain radar</p>
-            <h2 class="mt-3 text-3xl font-semibold">We fix the work your team keeps duct-taping.</h2>
-            <p class="mt-4 text-white/70">52% of SMB operators say they’re drowning in repetitive systems work—billing, inbox triage, inventory, reporting. We turn those pain points into scoped AI use cases with measurable ROI.</p>
-          </div>
-          <a href="#contact" class="mt-6 inline-flex items-center gap-2 text-accent text-sm uppercase tracking-[0.3em]">Free 30-min discovery →</a>
-        </div>
-        <div class="mt-10 grid gap-6 md:grid-cols-3">
-          <article class="problem-card">
-            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Customer teams</p>
-            <h3 class="text-xl font-semibold text-white">Inbox overload</h3>
-            <p class="text-sm text-white/70">Agent assist copilots summarize, draft, and push responses into your CRM, cutting handle time by 40% without breaking tone.</p>
-          </article>
-          <article class="problem-card">
-            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Finance ops</p>
-            <h3 class="text-xl font-semibold text-white">Spreadsheets on fumes</h3>
-            <p class="text-sm text-white/70">Reconcile payables, flag anomalies, and push ledger entries automatically with guardrails approved by your controller.</p>
-          </article>
-          <article class="problem-card">
-            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Field & inventory</p>
-            <h3 class="text-xl font-semibold text-white">Forecast blind spots</h3>
-            <p class="text-sm text-white/70">Blend POS, warehouse, and service data into demand forecasts plus auto-generated pick lists, saving hours every route.</p>
-          </article>
-        </div>
+    </div>
+    <div>
+      <div class="hero-panel">
+        <h3>Live Operator Snapshot</h3>
+        <ul>
+          <li>8 CRO-ready lead intelligence dossiers in flight</li>
+          <li>Daily Brave + SEC + Reddit ingest with Sid-managed enrichment</li>
+          <li>DealCast control surface + S3/Cloudflare demo stack deployed</li>
+          <li>Voice dashboards + Agentra knowledge search hosted on GitHub Pages</li>
+        </ul>
       </div>
-    </section>
-
-    <section id="solutions" class="py-20 bg-graphite/40">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center">
-          <p class="text-xs uppercase tracking-[0.5em] text-white/50">Custom modules</p>
-          <h2 class="mt-3 text-3xl font-semibold">Three ways we ship AI into your workflow.</h2>
-        </div>
-        <div class="mt-12 grid gap-6 lg:grid-cols-3">
-          <article class="solution-card">
-            <h3 class="text-xl font-semibold text-white">Copilot-in-the-loop</h3>
-            <p class="mt-3 text-sm text-white/70">Gmail, Outlook, or Zendesk sidebars that summarize threads, draft context-aware replies, and log CRM notes with one click.</p>
-            <ul class="mt-4 space-y-2 text-sm text-white/50">
-              <li>• LLM safety filters + tone profiles</li>
-              <li>• SOC2/SAML-ready auth</li>
-              <li>• Analytics on adoption + ROI</li>
-            </ul>
-          </article>
-          <article class="solution-card">
-            <h3 class="text-xl font-semibold text-white">Automation blueprints</h3>
-            <p class="mt-3 text-sm text-white/70">Orchestrations that watch your systems (ERP, CRM, Google Drive) and trigger human approvals, Slack nudges, or API calls when data shifts.</p>
-            <ul class="mt-4 space-y-2 text-sm text-white/50">
-              <li>• Built on n8n, Make, or custom code</li>
-              <li>• Observability + runbooks included</li>
-              <li>• Change-management playbooks</li>
-            </ul>
-          </article>
-          <article class="solution-card">
-            <h3 class="text-xl font-semibold text-white">Insight hubs</h3>
-            <p class="mt-3 text-sm text-white/70">Private dashboards where teams query natural language against live business data, with governance + lineage baked in.</p>
-            <ul class="mt-4 space-y-2 text-sm text-white/50">
-              <li>• Data contracts + connectors</li>
-              <li>• Conversational interface training</li>
-              <li>• Alerts + watchlists for leadership</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="process" class="py-20">
-      <div class="max-w-6xl mx-auto px-6 grid gap-10 lg:grid-cols-[45%_auto] lg:items-center">
+      <div class="metrics">
         <div>
-          <p class="text-xs uppercase tracking-[0.5em] text-white/50">How we work</p>
-          <h2 class="mt-3 text-3xl font-semibold">From napkin idea to production in 45 days.</h2>
-          <p class="mt-4 text-white/70">Our playbook helps SMB leaders prove ROI without risking core systems.</p>
+          <h4>Briefs Delivered</h4>
+          <p>8</p>
         </div>
-        <div class="process-grid">
-          <article>
-            <p class="step">01 · Discovery lab</p>
-            <h3>Map pains + data reality</h3>
-            <p>2-week sprint. Interviews, data inventory, ROI model. Ends with prioritized use cases + Figma click-through.</p>
-          </article>
-          <article>
-            <p class="step">02 · Pilot build</p>
-            <h3>Ship a controlled experiment</h3>
-            <p>4-week build + enablement. Copilot, automation, or insight hub deployed to a friendly cohort.</p>
-          </article>
-          <article>
-            <p class="step">03 · Scale + govern</p>
-            <h3>Roll out with guardrails</h3>
-            <p>Playbooks for training, analytics, compliance. Ops runbooks ensure finance & IT sign-off.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="pricing" class="py-20 bg-graphite/50">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center">
-          <p class="text-xs uppercase tracking-[0.5em] text-white/50">Engagement models</p>
-          <h2 class="mt-3 text-3xl font-semibold">Simple, transparent phases.</h2>
-        </div>
-        <div class="mt-12 grid gap-6 lg:grid-cols-3">
-          <article class="pricing-card">
-            <p class="text-xs uppercase tracking-[0.4em] text-white/50">Phase 1</p>
-            <h3 class="text-2xl font-semibold text-white">Diagnostic</h3>
-            <p class="mt-3 text-sm text-white/70">$7.5K fixed · 2 weeks</p>
-            <ul class="mt-4 space-y-2 text-sm text-white/50">
-              <li>• ROI + feasibility report</li>
-              <li>• Data readiness checklist</li>
-              <li>• Pilot backlog + roadmap</li>
-            </ul>
-          </article>
-          <article class="pricing-card is-featured">
-            <p class="text-xs uppercase tracking-[0.4em] text-white/50">Phase 2</p>
-            <h3 class="text-2xl font-semibold text-white">Pilot sprint</h3>
-            <p class="mt-3 text-sm text-white/70">Starting at $28K · 4–6 weeks</p>
-            <ul class="mt-4 space-y-2 text-sm text-white/50">
-              <li>• Build + integrate 1 use case</li>
-              <li>• Enablement + training kit</li>
-              <li>• Adoption + ROI reporting</li>
-            </ul>
-          </article>
-          <article class="pricing-card">
-            <p class="text-xs uppercase tracking-[0.4em] text-white/50">Phase 3</p>
-            <h3 class="text-2xl font-semibold text-white">Scale retainer</h3>
-            <p class="mt-3 text-sm text-white/70">From $8K/mo</p>
-            <ul class="mt-4 space-y-2 text-sm text-white/50">
-              <li>• Additional automations</li>
-              <li>• Monitoring + governance</li>
-              <li>• Quarterly roadmap reviews</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="cases" class="py-20">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center">
-          <p class="text-xs uppercase tracking-[0.5em] text-white/50">Proof of work</p>
-          <h2 class="mt-3 text-3xl font-semibold">Recent builds that moved the needle.</h2>
-        </div>
-        <div class="mt-12 grid gap-6 lg:grid-cols-3">
-          <article class="case-card">
-            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Healthcare network</p>
-            <h3 class="text-xl font-semibold text-white">Clinical inbox copilot</h3>
-            <p class="mt-2 text-sm text-white/70">Summarized patient threads and drafted responses for 4 regional clinics.</p>
-            <ul class="mt-4 space-y-1 text-sm text-white/50">
-              <li>• 37% faster triage</li>
-              <li>• 0 PHI incidents (HIPAA audit cleared)</li>
-            </ul>
-          </article>
-          <article class="case-card">
-            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Wholesale distributor</p>
-            <h3 class="text-xl font-semibold text-white">Predictive replenishment</h3>
-            <p class="mt-2 text-sm text-white/70">Forecast engine combining POS + warehouse feeds to auto-create purchase orders.</p>
-            <ul class="mt-4 space-y-1 text-sm text-white/50">
-              <li>• $1.2M inventory reduction</li>
-              <li>• 92% forecast accuracy</li>
-            </ul>
-          </article>
-          <article class="case-card">
-            <p class="text-xs uppercase tracking-[0.3em] text-white/50">Fintech lender</p>
-            <h3 class="text-xl font-semibold text-white">Risk analyst copilot</h3>
-            <p class="mt-2 text-sm text-white/70">LLM assistant that reads PDF apps, highlights risk anomalies, and writes memos.</p>
-            <ul class="mt-4 space-y-1 text-sm text-white/50">
-              <li>• 55 hours/week saved</li>
-              <li>• 0 critical hallucinations (policy filters)</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="py-20 bg-graphite/40">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="lg:flex lg:items-start lg:gap-10">
-          <div class="lg:w-1/3">
-            <p class="text-xs uppercase tracking-[0.5em] text-white/50">FAQs</p>
-            <h2 class="mt-3 text-3xl font-semibold">Straight answers for busy operators.</h2>
-            <p class="mt-4 text-white/70">Security, change management, and pricing clarity baked in.</p>
-          </div>
-          <div class="mt-8 lg:mt-0 lg:flex-1 space-y-6">
-            <article class="faq-card">
-              <h3>How do you protect our data?</h3>
-              <p>We deploy inside your cloud when needed, enforce data-routing rules, and run red-team tests before launch. Every build ships with a data map, retention policy, and admin controls.</p>
-            </article>
-            <article class="faq-card">
-              <h3>What tools do you use?</h3>
-              <p>OpenAI, Anthropic, Azure ML, Vertex, plus orchestration layers (LangChain, LlamaIndex) and automation tools (Zapier, Make, n8n). We pick the stack that suits your compliance and budget.</p>
-            </article>
-            <article class="faq-card">
-              <h3>Can you work with our IT team?</h3>
-              <p>Yes—every engagement has a technical lead and change manager. We co-author acceptance criteria, run joint QA, and train your team before handoff.</p>
-            </article>
-            <article class="faq-card">
-              <h3>How do we measure ROI?</h3>
-              <p>Diagnostic sprint defines baseline KPIs (hours saved, revenue lift, error rate). Pilots ship with dashboards + weekly readouts so finance and ops can quantify the impact.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-20">
-      <div class="max-w-5xl mx-auto px-6 grid gap-10 lg:grid-cols-2 lg:items-center">
         <div>
-          <p class="text-xs uppercase tracking-[0.5em] text-white/50">Book a diagnostic</p>
-          <h2 class="mt-3 text-3xl font-semibold">Bring us a messy workflow. Leave with an AI action plan.</h2>
-          <p class="mt-4 text-white/70">Pick a slot for a 30-minute discovery call. We’ll review your top use case, expected ROI, and data readiness. No jargon, no pressure.</p>
-          <ul class="mt-6 space-y-3 text-sm text-white/60">
-            <li>• SOC 2, GDPR, HIPAA-friendly playbooks</li>
-            <li>• Tool-agnostic recommendations</li>
-            <li>• Includes pilot scope + timeline</li>
-          </ul>
+          <h4>Modeled MRR Impact</h4>
+          <p>$4.7M+</p>
         </div>
-        <div class="rounded-3xl border border-white/10 bg-graphite/80 p-6 shadow-card">
-          <form class="space-y-4">
-            <div>
-              <label class="text-xs uppercase tracking-[0.3em] text-white/50">Name</label>
-              <input type="text" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white focus:outline-none focus:ring focus:ring-accent" placeholder="Jordan Patel" />
-            </div>
-            <div>
-              <label class="text-xs uppercase tracking-[0.3em] text-white/50">Email</label>
-              <input type="email" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white focus:outline-none focus:ring focus:ring-accent" placeholder="jordan@sunsetretail.com" />
-            </div>
-            <div>
-              <label class="text-xs uppercase tracking-[0.3em] text-white/50">Company & role</label>
-              <input type="text" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white focus:outline-none focus:ring focus:ring-accent" placeholder="Sunset Retail · COO" />
-            </div>
-            <div>
-              <label class="text-xs uppercase tracking-[0.3em] text-white/50">What should we tackle first?</label>
-              <textarea rows="4" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white focus:outline-none focus:ring focus:ring-accent" placeholder="e.g., automate AP approvals, launch a support copilot, build demand forecast"></textarea>
-            </div>
-            <button type="submit" class="w-full rounded-full bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-night hover:bg-accentDark">Send brief</button>
-            <p class="text-xs text-white/50 text-center">Or email <a href="mailto:hello@signalfoundry.ai" class="text-accent">hello@signalfoundry.ai</a></p>
-          </form>
+        <div>
+          <h4>Signals/Day</h4>
+          <p>1,200+</p>
         </div>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <footer class="border-t border-white/5 bg-graphite/80 py-10">
-      <div class="max-w-6xl mx-auto px-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-sm text-white/50">
-        <p>© <span id="year"></span> Agentra AI · San Diego & Remote</p>
-        <div class="flex flex-wrap gap-4">
-          <a href="#faq" class="hover:text-white">Security + Privacy</a>
-          <a href="#pricing" class="hover:text-white">Engagements</a>
-          <a href="#contact" class="hover:text-white">Contact</a>
-        </div>
+  <section class="section" id="why">
+    <h2>Why agentic workflows</h2>
+    <p class="lead">Traditional dashboards report the past. Agentic systems look ahead: they interrogate live data, cite sources, and route decisions in minutes—not days.</p>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="badge">Efficiency</span>
+        <h3>Reduce swivel-chair work</h3>
+        <p>Models monitor jobs, SEC filings, customer ops, and on-prem telemetry in one loop, escalating only the missions that matter.</p>
+        <ul>
+          <li>Automated signal capture + dedupe</li>
+          <li>Self-serve briefs and call kits</li>
+        </ul>
       </div>
-    </footer>
+      <div class="pillar">
+        <span class="badge">Credibility</span>
+        <h3>Provenance-first outputs</h3>
+        <p>Every agent message carries citations, transcript toggles, and gap trackers so execs can trust and drill down instantly.</p>
+        <ul>
+          <li>RAG + zero-hallucination guardrails</li>
+          <li>Human-in-the-loop approvals</li>
+        </ul>
+      </div>
+      <div class="pillar">
+        <span class="badge">Growth</span>
+        <h3>Revenue-grade delivery</h3>
+        <p>Outputs land where your GTM lives—Slack, CRM, or live broadcast surfaces—closing the loop from discovery to deal.</p>
+        <ul>
+          <li>Agent-ready playbooks & Instant Kits</li>
+          <li>Telemetry for MRR attribution</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </body>
+  <section class="section" id="story">
+    <h2>The Agentra storyline</h2>
+    <p class="lead">We pair elite AI engineering with “data scientist + elite UI” craft. Here’s how the system scales from the first signal to boardroom-ready storytelling.</p>
+    <div class="process">
+      <div class="process-card">
+        <span>01 · Align</span>
+        <h3>ICP + signal mapping</h3>
+        <p>We inventory your core questions, define exclusion lists, and set the KPIs that matter (MRR, risk, operations).</p>
+      </div>
+      <div class="process-card">
+        <span>02 · Build</span>
+        <h3>Agent orchestration</h3>
+        <p>Multi-cloud collectors, vector stores, and Sid agents sync over GitHub/Cloudflare so changes ship daily.</p>
+      </div>
+      <div class="process-card">
+        <span>03 · Orchestrate</span>
+        <h3>Control surfaces</h3>
+        <p>DealCast dashboards, Lupus CMS, knowledge search, and voice HUDs translate raw AI output into human workflows.</p>
+      </div>
+      <div class="process-card">
+        <span>04 · Operationalize</span>
+        <h3>Telemetry + trust</h3>
+        <p>Every agent is instrumented: approvals, deltas, alerts. Execs get a living ledger of what AI touched and why.</p>
+      </div>
+    </div>
+    <div class="story-grid">
+      <div class="story">
+        <h4>1,200+ signals/day</h4>
+        <span>Brave News · Reddit · SEC · Jobs</span>
+        <p>Custom filters + vendor exclusion rules keep the firehose clean. Sid agents triage and tag in under 90 seconds.</p>
+      </div>
+      <div class="story">
+        <h4>DealCast control room</h4>
+        <span>Intel Scout · Playbook Crafter · Call Studio</span>
+        <p>A live broadcast surface that wires AI copy, overlays, and Instant Kits straight into sales + media teams.</p>
+      </div>
+      <div class="story">
+        <h4>Agent-ready knowledge</h4>
+        <span>Agentra Knowledge Search</span>
+        <p>Static sites + embeddings deliver fast answers even on locked-down hotel Wi-Fi—no VPN excuses.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="architecture">
+    <h2>Reference architecture</h2>
+    <p class="lead">Each cloud gets a purpose-built workflow. Models run where the data lives, and UI shells ship as lightweight web apps so your teams can actually use them.</p>
+    <div class="architecture">
+      <article class="arch-card">
+        <h3>🟧 AWS FinOps Guard</h3>
+        <ul>
+          <li>Cost Explorer + CloudWatch events trigger Step Functions</li>
+          <li>Bedrock + Lambda draft remediation plans with audit trails</li>
+          <li>DynamoDB approval history + SSM Automation for fixes</li>
+        </ul>
+      </article>
+      <article class="arch-card">
+        <h3>🟩 Azure Field Ops Orchestrator</h3>
+        <ul>
+          <li>IoT Central → Event Hub → Durable Functions storyline</li>
+          <li>Azure Cognitive Search RAG for playbooks</li>
+          <li>Teams adaptive cards + Dynamics 365 work orders</li>
+        </ul>
+      </article>
+      <article class="arch-card">
+        <h3>🟦 Google Cloud Market Mesh</h3>
+        <ul>
+          <li>Pub/Sub + Dataflow normalization into BigQuery</li>
+          <li>Vertex AI Search/GPT for exec briefs and sentiment</li>
+          <li>Cloud Run webapp + Looker Studio dashboards</li>
+        </ul>
+      </article>
+    </div>
+    <div class="case-block" id="cases">
+      <div>
+        <h3>Scripps Health</h3>
+        <span>Shane Thielman + audit clock narrative</span>
+        <ul>
+          <li>Smart shoulder implant telemetry → AI brief</li>
+          <li>Producer-ready scripts for DealCast demo</li>
+          <li>$1.2M pipeline opportunity surfaced</li>
+        </ul>
+      </div>
+      <div>
+        <h3>M&T Bank</h3>
+        <span>Dual CIO + cloud migration</span>
+        <ul>
+          <li>SEC 8-K ingestion + board notes extraction</li>
+          <li>Lead scoring (revenue, tech stack, intent)</li>
+          <li>Instant Kit assets for CRO outreach</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Western Alliance</h3>
+        <span>Torrey Pines Bank adjacency</span>
+        <ul>
+          <li>Jobs + Reddit signals flagged risk events</li>
+          <li>AI wrote tailored executive bios</li>
+          <li>Single-click share packs to partner reps</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ops">
+    <h2>Operational guardrails</h2>
+    <p class="lead">Agentra ships like an elite internal team. Everything runs in GitHub, deploys via Cloudflare/GitHub Pages, and reports back through the Jarvis dashboard.</p>
+    <ul class="list-check">
+      <li>Sid agents in rotation for research, ops, and QA</li>
+      <li>Daily dashboards + Kanban updates so you see every deliverable</li>
+      <li>Voice UI + knowledge search hardened for hotel Wi-Fi travel</li>
+      <li>Backups + AWS CLI v2 upgrade playbooks in place</li>
+    </ul>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Let’s wire agentic AI into your business</h2>
+    <p>Book a 30-minute strategy session. We’ll map your signal sources, pick the right models, and outline an agent rollout that pays for itself in the first quarter.</p>
+    <div class="actions">
+      <a class="primary" href="mailto:hello@agentra.ai?subject=Agentra%20Strategy%20Session">Schedule a call</a>
+      <a class="secondary" href="https://topdawg619.github.io/jarvis-dashboard/" target="_blank" rel="noopener">See live ops dashboard</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Agentra AI • Designed + deployed by the Jarvis ops stack.</footer>
+</div>
+</body>
 </html>
