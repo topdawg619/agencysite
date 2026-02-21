@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentra · Notion OAuth Callback</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#05060A;--fg:#F5F7FF;--muted:#A7B4FF;--card:#12182B;--border:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',system-ui;background:var(--bg);color:var(--fg);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;}
+    .card{max-width:560px;width:100%;background:var(--card);border-radius:20px;border:1px solid var(--border);padding:32px;text-align:center;}
+    h1{font-family:'Space Grotesk';font-size:2rem;margin-bottom:12px;}
+    p{color:var(--muted);margin-bottom:18px;line-height:1.5;}
+    code{display:inline-block;background:rgba(255,255,255,.08);padding:4px 10px;border-radius:8px;font-size:.95rem;}
+    .info{margin-top:20px;text-align:left;color:var(--muted);font-size:.95rem;}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Authorization complete</h1>
+    <p>If you are seeing this page, Notion has redirected back to Agentra. Copy the <code>?code=...</code> parameter in the URL bar and return to the app to finish linking your workspace.</p>
+    <div class="info">
+      <p><strong>Having trouble?</strong></p>
+      <ul>
+        <li>Do not share this URL publicly—the code is single-use.</li>
+        <li>If there is an <code>error</code> parameter, send the message to <a href="mailto:support@agentra.ai">support@agentra.ai</a>.</li>
+        <li>After completing the token exchange, you can close this tab.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
